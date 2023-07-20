@@ -1,0 +1,92 @@
+body{
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+.register_form{
+    width: 60%;
+    background: white;
+    border-radius: 5px;
+    border: #95959a 1.5px solid;
+    margin: 50px auto 50px;
+}
+
+.form_title{
+    background-color: #c2c2c2;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    transition: color 1s;
+}
+
+.input_fields{
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+}
+
+.register_field{
+    width: 40%;
+    padding: 20px;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto auto;
+}
+.register_field input{
+    padding: 5px;
+    border-radius: 2px;
+    border: #95959a 1.5px solid;
+    display: flex;
+    font-size: 14px;
+}
+.register_field label{
+    font-size: 12px;
+    color: #95959a;
+    transition: color 1s;
+}
+
+.register_field label:hover{
+    color: rgba(62, 255, 152, 0.99);
+}
+
+.register_buttons{
+    font-size: 14px;
+    width: 40%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+.register_buttons button{
+    padding: 5px;
+    border-radius: 2px;
+    border: #95959a 1.5px solid;
+    height: auto;
+    width: 30%;
+    color: white;
+    cursor: pointer;
+}
+
+.register_buttons .cansel_button{
+    background-color: #bb271d;
+    transition: all 0.5s;
+}
+
+.register_buttons .sign_in_button{
+    background-color: rgb(110, 205, 150);
+    transition: all 0.5s;
+}
+
+.register_buttons .cansel_button:hover{
+    background-color: #ea2617;
+}
+
+.register_buttons .sign_in_button:hover{
+    background-color: rgb(12, 232, 105);
+}
+
+
+

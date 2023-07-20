@@ -1,0 +1,14 @@
+.error{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+.errorTitle .errorCode{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.error img{
+    width: 400px;
+}

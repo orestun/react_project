@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Open+Sans:wght@400;700&family=Roboto&display=swap');
+ul li{
+    display: block;
+}
+ul{
+    display: flex;
+}
+nav{
+    margin-right: auto;
+}
+ul li a{
+    padding: 0 15px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 0 10px;
+}
+
+.search_field input, select, button{
+    border: 0;
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+input, select:focus {
+    outline: none;
+}
+.search_field button img{
+    height: 12px;
+}
+.search_field button{
+    cursor: pointer;
+}
+.search_field{
+    border: #020107 1px solid;
+    border-radius: 2px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+}
+ul li a, .right_panel a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration-line: none;
+    color: rgb(30, 31, 34);
+    transition: all 1s ease-in;
+}
+.right_panel{
+    padding: 2px 2px;
+    display: inline-flex;
+    vertical-align: center;
+    align-items: center;
+}
+.right_panel a{
+    padding: 2px 4px;
+}
+.right_panel .vertical{
+    border-left: #020107 1.5px solid;
+    padding: 2px 0;
+    height: 20px;
+}

@@ -1,0 +1,210 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.category_container{
+    background: #dedede;
+}
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-around;
+}
+.categories .category{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #383737;
+    transition: color 0.5s;
+}
+.categories .category img{
+    height: 50px;
+    width: 50px;
+    background: none;
+}
+.categories .category h6{
+    margin: 0;
+    font-family: 'Chivo Mono', monospace;
+    font-style: normal;
+    font-size: 12px;
+    padding-top: 10px;
+    width: 100px;
+    text-align: center;
+}
+.categories .category:hover{
+    color: rgb(110, 205, 150);
+}
+.cards_container{
+    padding: 30px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    justify-content: center;
+}
+
+.main_image{
+    height: 200px;
+    width: 200px;
+    background: #ffffff;
+    margin-bottom: -4px;
+}
+
+.cards_container .card{
+    width: 200px;
+    margin: 15px auto 15px auto;
+    transition: all 0.5s;
+}
+.favourite_icon {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.card_info{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.card_info_row{
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    horiz-align: center;
+}
+.card_info_row .name, .description, .expiration, .price, .button{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.passed{
+    color: rgb(166, 19, 8);
+    margin: 0;
+}
+
+.name{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    max-width: 160px;
+    text-overflow: ellipsis;
+}
+.description{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 45px;
+    width: 100%;
+}
+
+
+.card_info_row .checkout_description{
+    font-size: 14px;
+}
+.card_info_row .expiration{
+    padding-top: 10px;
+    font-size: 12px;
+    color: #95959a;
+}
+.card_info_row .button{
+    color: #95959a;
+    font-size: 14px;
+    border-radius: 2px;
+    border: #95959a 1px solid;
+    padding: 5px;
+    transition: all 1s;
+}
+.card_info_row .button:hover{
+    background: rgb(110, 205, 150);
+    color: white;
+}
+.last-row{
+    border-top: #95959a 0.5px solid;
+}
+.category_container a{
+    text-decoration-line: none;
+}
+.card a{
+    display: inline-block;
+    font-size: 0;
+    text-decoration-line: none;
+}
+
+.card:hover{
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+#toTop{
+    position: fixed;
+    background: none;
+    right:2%;
+    top: 80%;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+#toTop.show {
+    opacity: 1;
+}
+#toTop img{
+    width: 70px;
+}
+.nothing_found{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.nothing_found h1{
+    margin: 0;
+    padding: 0;
+}
+.nothing_found img{
+    width: 300px;
+}
+.nothing_found.show{
+    display: block;
+    grid-column: span 5;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    align-self: center;
+    visibility: visible;
+    opacity: 1;
+}
+#toLastScrollPosition{
+    width: 70px;
+    position: fixed;
+    padding: 0;
+    top: 50%;
+    right:2%;
+    background: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+#toLastScrollPosition img{
+    width: 70px;
+}
+#toLastScrollPosition.show{
+    opacity: 1;
+}

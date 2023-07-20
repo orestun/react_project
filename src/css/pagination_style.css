@@ -1,0 +1,42 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration-line: none;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    border: 1px #aba9a9 solid;
+    background: #ffffff;
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 18px;
+    color: #464444;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.5s linear;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+.item.selected{
+    border: 1px rgb(51, 157, 97) solid;
+    background: rgb(130, 211, 164);
+    color: white;
+}
+.item:hover{
+    border: 1px rgb(51, 157, 97) solid;
+    color: rgb(51, 157, 97);
+}
+
+.item.selected:hover{
+    color: white;
+}

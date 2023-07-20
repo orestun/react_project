@@ -1,0 +1,88 @@
+body{
+    padding:0;
+    margin: 0;
+}
+.item_details_container{
+    background: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item_details{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+.item_details .images{
+    height: 400px;
+    margin:15px;
+    width: 500px;
+    background: #dedede;
+}
+.main_details{
+    background: white;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: auto;
+    min-height: 220px;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.main_details .details_row{
+    font-family: 'Chivo Mono', monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details_row.checkout_name{
+    margin: 0;
+}
+.details_row.short_desc{
+    font-size: 14px;
+    color: rgb(101, 101, 114);
+    height: 50%;
+    margin: 0;
+    padding: 5px 0;
+}
+.details_row.timestamp{
+    margin-top: auto;
+    margin-bottom: 0;
+}
+.time_left{
+    font-size: 12px;
+    color: rgb(101, 101, 114);
+}
+.time{
+    font-size: 16px;
+}
+.button{
+    color: #95959a;
+    font-size: 14px;
+    border-radius: 2px;
+    border: #95959a 1px solid;
+    padding: 5px;
+    transition: all 1s;
+    text-decoration-line: none;
+}
+.details_row.last_row{
+    padding-top: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.button:hover{
+    background: rgb(110, 205, 150);
+    color: white;
+}
+.long_description{
+    font-family: 'Chivo Mono', monospace;
+    padding: 15px;
+
+}
+.long_desc_title{
+    font-size: 20px;
+}

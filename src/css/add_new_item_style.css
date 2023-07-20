@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.add_new_title{
+    background-color: #bcbcbc;
+    padding: 5px 20px 5px 15%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.add_new_item_form{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border:0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.input_fields{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+}
+.adding_field{
+    width: 50%;
+    max-width: 300px;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.adding_field input, textarea{
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: #95959a 1px solid;
+    min-height: 35px;
+    max-width: 300px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    vertical-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+textarea{
+    height: 80px;
+    margin-bottom: auto;
+}
+
+.adding_field select{
+    display: flex;
+    padding: 0;
+    border-radius: 2px;
+    border: #95959a 1px solid;
+    height: 35px;
+}
+
+.adding_field label{
+    font-size: 12px;
+    color: #95959a;
+    transition: color 1s;
+    padding-bottom: 5px;
+}
+
+.adding_field label:hover{
+    color: rgba(62, 255, 152, 0.99);
+}
+
+.adding_field .new_item_description textarea{
+    height: 80px;
+    resize: none;
+
+}
+
+.register_buttons{
+    font-family: 'Chivo Mono', monospace;
+    font-size: 14px;
+    width: 40%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+.register_buttons button{
+    padding: 5px;
+    border-radius: 2px;
+    border: #95959a 1.5px solid;
+    height: auto;
+    width: 30%;
+    color: white;
+    cursor: pointer;
+}
+
+.register_buttons .cansel_button{
+    background-color: #bb271d;
+    transition: all 0.5s;
+}
+
+.register_buttons .save_button{
+    background-color: rgb(110, 205, 150);
+    transition: all 0.5s;
+}
+
+.register_buttons .cansel_button:hover{
+    background-color: #ea2617;
+}
+
+.register_buttons .save_button:hover{
+    background-color: rgb(12, 232, 105);
+}
+
+.adding_field.images input[type="file"]{
+    text-align: center;
+}
